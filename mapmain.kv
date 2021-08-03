@@ -1,0 +1,14 @@
+#:import MapView kivy_garden.mapview.MapView
+
+<MapMain>:
+    lat: 59.937
+    lon: 30.308
+    zoom: 12
+
+    on_lat:
+        self.import_marker_from_db()
+        self.update_map_center(self.lat, self.lon)
+
+
+
+

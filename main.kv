@@ -1,0 +1,17 @@
+#:include mapmain.kv
+
+
+BoxLayout:
+    orientation: 'vertical'
+    MDToolbar:
+
+        icon: "plus"
+        title: 'che palish'
+        md_bg_color: 89/255, 117/255, 162/255, 1
+        right_action_items: [["plus", lambda x: app.plus_pressed()]]
+        left_action_items: [["dots-vertical", lambda x: app.dots_pressed()]]
+
+
+    MapMain:
+        id: mapview
+
